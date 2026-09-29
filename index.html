@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>给奥斯卡 ♥</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100dvh; background: #fff7f4; color: #593c46; font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; overflow: hidden; }
+    main { min-height: 100dvh; display: grid; place-items: center; padding: 44px 36px 70px; position: relative; isolation: isolate; }
+    main::before, main::after { content: ""; position: absolute; z-index: -1; width: 250px; height: 250px; border-radius: 50%; background: #ffd9d5; opacity: .4; }
+    main::before { top: -125px; right: -110px; }
+    main::after { bottom: -155px; left: -125px; }
+    .content { width: min(100%, 380px); text-align: center; }
+    .illustration { width: 180px; height: 169px; display: block; margin: 0 auto 15px; }
+    .illustration svg { width: 100%; height: 100%; }
+    .eyebrow { color: #a47880; font-size: 10px; letter-spacing: 3px; font-weight: 600; }
+    h1 { margin: 20px auto 22px; font-size: clamp(27px, 7.2vw, 34px); line-height: 1.48; letter-spacing: 1px; }
+    .divider { display: flex; align-items: center; justify-content: center; gap: 11px; color: #cf8390; margin-bottom: 40px; }
+    .divider::before, .divider::after { content: ""; width: 36px; height: 1px; background: #e9c4c7; }
+    .buttons { display: flex; flex-direction: column; align-items: center; gap: 28px; padding: 0 16px; }
+    button { border: 0; cursor: pointer; font-family: inherit; font-weight: 600; }
+    .yes { width: 100%; max-width: 250px; height: 51px; border-radius: 99px; background: #cb6b7a; color: white; font-size: 15px; box-shadow: 0 7px 17px #bb657144; transition: transform .35s ease; }
+    .maybe, .restart { background: transparent; color: #9e7d83; font-size: 13px; padding: 10px; }
+    .date { margin-top: 18px; font-size: 24px; font-weight: 600; }
+    .blessing { margin: 8px 0 22px; color: #cb6b7a; font-size: 36px; font-weight: 600; letter-spacing: 6px; }
+    .note { color: #956f79; font-size: 14px; }
+    .restart { margin-top: 40px; }
+    footer { position: absolute; bottom: 23px; inset-inline: 0; text-align: center; font-size: 9px; letter-spacing: 2px; color: #b8979c; }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="content">
+      <section id="question-screen">
+        <div class="illustration" id="main-image" role="img" aria-label="微笑的爱心插画"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300">
+<ellipse cx="162" cy="271" rx="92" ry="11" fill="#d493a3" opacity=".2"/>
+<path d="M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z" fill="#e98fa4" stroke="#9f6177" stroke-width="5" stroke-linejoin="round"/>
+<path d="M74 96 C76 75 90 65 104 65" fill="none" stroke="#ffd6de" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+<ellipse cx="101" cy="158" rx="19" ry="10" fill="#e86f8d" opacity=".55"/>
+<ellipse cx="221" cy="158" rx="19" ry="10" fill="#e86f8d" opacity=".55"/>
+<path d="M112 230 Q96 249 83 241" fill="none" stroke="#9f6177" stroke-width="5" stroke-linecap="round"/>
+<path d="M206 230 Q222 250 238 240" fill="none" stroke="#9f6177" stroke-width="5" stroke-linecap="round"/>
+
+<path d="M111 130 Q122 115 133 130 M188 130 Q199 115 210 130" fill="none" stroke="#6d4255" stroke-width="6" stroke-linecap="round"/>
+<path d="M145 160 Q162 177 179 160" fill="none" stroke="#6d4255" stroke-width="5" stroke-linecap="round"/>
+<path d="M60 82 l-5 -11 M268 81 l7 -10" stroke="#c8738a" stroke-width="4" stroke-linecap="round"/>
+</svg></div>
+        <div class="eyebrow">A LITTLE QUESTION FOR YOU</div>
+        <h1 id="question">奥斯卡，你愿意做我男朋友嘛</h1>
+        <div class="divider">✦</div>
+        <div class="buttons">
+          <button class="yes" id="yes">我好愿意啊刘谙旎！！</button>
+          <button class="maybe" id="think">我还是要再想想...</button>
+        </div>
+      </section>
+      <section id="answer-screen" hidden>
+        <div class="illustration" role="img" aria-label="拥抱的爱心插画"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 300">
+<ellipse cx="162" cy="271" rx="92" ry="11" fill="#d493a3" opacity=".2"/>
+<path d="M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z" fill="#e98fa4" stroke="#9f6177" stroke-width="5" stroke-linejoin="round"/>
+<path d="M74 96 C76 75 90 65 104 65" fill="none" stroke="#ffd6de" stroke-width="10" stroke-linecap="round" opacity=".8"/>
+<ellipse cx="101" cy="158" rx="19" ry="10" fill="#e86f8d" opacity=".55"/>
+<ellipse cx="221" cy="158" rx="19" ry="10" fill="#e86f8d" opacity=".55"/>
+<path d="M112 230 Q96 249 83 241" fill="none" stroke="#9f6177" stroke-width="5" stroke-linecap="round"/>
+<path d="M206 230 Q222 250 238 240" fill="none" stroke="#9f6177" stroke-width="5" stroke-linecap="round"/>
+
+<path d="M112 131 Q124 116 136 131 M184 131 Q196 116 208 131" fill="none" stroke="#6d4255" stroke-width="6" stroke-linecap="round"/>
+<path d="M139 159 Q161 187 184 159" fill="none" stroke="#6d4255" stroke-width="6" stroke-linecap="round"/>
+<path d="M68 168 Q99 205 136 197 M253 168 Q224 205 186 197" fill="none" stroke="#9f6177" stroke-width="9" stroke-linecap="round"/>
+<path d="M160 211 C150 202 132 191 132 180 C132 168 148 166 160 181 C172 165 190 168 190 181 C190 193 172 203 160 211Z" fill="#fff6f1" stroke="#9f6177" stroke-width="3"/>
+<path d="M43 63 C38 56 29 54 27 63 C26 69 33 75 43 83 C53 75 60 69 59 63 C57 54 48 56 43 63Z M275 43 C271 36 263 35 260 42 C258 48 266 56 275 62 C285 55 291 48 289 42 C286 35 278 36 275 43Z" fill="#e98fa4"/>
+</svg></div>
+        <div class="eyebrow">OUR STORY BEGINS</div>
+        <div class="date">2026年9月28日</div>
+        <div class="blessing">良辰吉日</div>
+        <div class="divider">♥</div>
+        <div class="note">同意了不许反悔的哦♡</div>
+        <div class="note" style="margin-top: 7px">记住这一天哦～</div>
+        <button class="restart" id="restart">再看一遍</button>
+      </section>
+    </div>
+    <footer>MADE WITH LOVE · 2026.09.28</footer>
+  </main>
+  <script>
+    const question = document.getElementById('question');
+    const yes = document.getElementById('yes');
+    const think = document.getElementById('think');
+    const first = document.getElementById('question-screen');
+    const answer = document.getElementById('answer-screen');
+    const image = document.getElementById('main-image');
+    const drawings = {"hug":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M112 131 Q124 116 136 131 M184 131 Q196 116 208 131\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n<path d=\"M139 159 Q161 187 184 159\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n<path d=\"M68 168 Q99 205 136 197 M253 168 Q224 205 186 197\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"9\" stroke-linecap=\"round\"/>\n<path d=\"M160 211 C150 202 132 191 132 180 C132 168 148 166 160 181 C172 165 190 168 190 181 C190 193 172 203 160 211Z\" fill=\"#fff6f1\" stroke=\"#9f6177\" stroke-width=\"3\"/>\n<path d=\"M43 63 C38 56 29 54 27 63 C26 69 33 75 43 83 C53 75 60 69 59 63 C57 54 48 56 43 63Z M275 43 C271 36 263 35 260 42 C258 48 266 56 275 62 C285 55 291 48 289 42 C286 35 278 36 275 43Z\" fill=\"#e98fa4\"/>\n</svg>","pleading":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M107 120 Q122 109 134 123 M187 123 Q200 109 214 120\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n<ellipse cx=\"122\" cy=\"140\" rx=\"12\" ry=\"16\" fill=\"#6d4255\"/><ellipse cx=\"199\" cy=\"140\" rx=\"12\" ry=\"16\" fill=\"#6d4255\"/>\n<circle cx=\"119\" cy=\"134\" r=\"4\" fill=\"white\"/><circle cx=\"196\" cy=\"134\" r=\"4\" fill=\"white\"/>\n<path d=\"M151 169 Q161 162 172 169\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M111 157 Q103 171 110 176 Q119 176 117 167Z M204 157 Q196 172 204 176 Q213 175 211 165Z\" fill=\"#91c5df\" opacity=\".8\"/>\n</svg>","heart":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M111 130 Q122 115 133 130 M188 130 Q199 115 210 130\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n<path d=\"M145 160 Q162 177 179 160\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M60 82 l-5 -11 M268 81 l7 -10\" stroke=\"#c8738a\" stroke-width=\"4\" stroke-linecap=\"round\"/>\n</svg>","shocked":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<ellipse cx=\"122\" cy=\"136\" rx=\"9\" ry=\"14\" fill=\"#6d4255\"/><ellipse cx=\"200\" cy=\"136\" rx=\"9\" ry=\"14\" fill=\"#6d4255\"/>\n<ellipse cx=\"161\" cy=\"171\" rx=\"8\" ry=\"12\" fill=\"#6d4255\"/>\n<path d=\"M91 107 l-14 -10 M231 106 l14 -11\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n</svg>","hopeful":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<ellipse cx=\"122\" cy=\"136\" rx=\"11\" ry=\"15\" fill=\"#6d4255\"/><ellipse cx=\"200\" cy=\"136\" rx=\"11\" ry=\"15\" fill=\"#6d4255\"/>\n<circle cx=\"119\" cy=\"131\" r=\"4\" fill=\"white\"/><circle cx=\"197\" cy=\"131\" r=\"4\" fill=\"white\"/>\n<path d=\"M147 164 Q162 177 177 164\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M40 60 l4 9 9 3 -9 3 -4 9 -4 -9 -9 -3 9 -3Z\" fill=\"#d7859b\"/>\n</svg>","crying":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M106 124 Q119 116 134 126 M187 126 Q202 115 216 124\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M114 140 l15 0 M193 140 l15 0\" stroke=\"#6d4255\" stroke-width=\"6\" stroke-linecap=\"round\"/>\n<path d=\"M150 180 Q161 165 174 180\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M115 149 Q103 168 111 185 Q124 185 121 169Z M204 149 Q192 168 200 185 Q213 185 210 169Z\" fill=\"#91c5df\"/>\n</svg>","pout":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M109 132 l21 -5 M190 127 l21 5\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<circle cx=\"122\" cy=\"141\" r=\"7\" fill=\"#6d4255\"/><circle cx=\"200\" cy=\"141\" r=\"7\" fill=\"#6d4255\"/>\n<path d=\"M149 173 Q162 161 176 173\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n</svg>","thinking":"<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 320 300\">\n<ellipse cx=\"162\" cy=\"271\" rx=\"92\" ry=\"11\" fill=\"#d493a3\" opacity=\".2\"/>\n<path d=\"M161 245 C137 226 53 171 48 111 C42 72 64 47 96 47 C123 47 146 64 160 84 C178 58 201 47 226 47 C261 47 283 74 278 112 C272 171 196 224 161 245Z\" fill=\"#e98fa4\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linejoin=\"round\"/>\n<path d=\"M74 96 C76 75 90 65 104 65\" fill=\"none\" stroke=\"#ffd6de\" stroke-width=\"10\" stroke-linecap=\"round\" opacity=\".8\"/>\n<ellipse cx=\"101\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<ellipse cx=\"221\" cy=\"158\" rx=\"19\" ry=\"10\" fill=\"#e86f8d\" opacity=\".55\"/>\n<path d=\"M112 230 Q96 249 83 241\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M206 230 Q222 250 238 240\" fill=\"none\" stroke=\"#9f6177\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n\n<path d=\"M107 136 Q120 127 134 137 M186 138 Q199 128 214 136\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<path d=\"M151 169 Q164 176 175 166\" fill=\"none\" stroke=\"#6d4255\" stroke-width=\"5\" stroke-linecap=\"round\"/>\n<circle cx=\"250\" cy=\"36\" r=\"9\" fill=\"#e98fa4\"/><circle cx=\"271\" cy=\"25\" r=\"5\" fill=\"#e98fa4\"/>\n</svg>"};
+    const reactions = [
+      ['你确定吗...🥹', '我好像有点不愿意...', 'pleading'],
+      ['要不再想想？', '真的要在一起吗...', 'thinking'],
+      ['真的不选我吗？', '我要再犹豫一下...', 'shocked'],
+      ['我会有点伤心欸…', '我还没有想好...', 'crying'],
+      ['再给你一次机会🥺', '可不可以再等等...', 'hopeful'],
+      ['怎么还在考虑呀？', '我还是有点纠结...', 'pout'],
+      ['我真的很喜欢你哦', '让我再想一分钟...', 'heart'],
+      ['那我继续等你的答案 ♡', '再让我考虑一下...', 'pleading']
+    ];
+    let clickCount = 0;
+    think.addEventListener('click', () => {
+      clickCount++;
+      const [message, label, expression] = reactions[(clickCount - 1) % reactions.length];
+      question.textContent = message;
+      think.textContent = label;
+      image.innerHTML = drawings[expression];
+      image.setAttribute('aria-label', '变化表情的爱心插画');
+      const scale = 1 + clickCount * 0.18;
+      yes.style.transform = `scale(${scale})`;
+      yes.style.marginBottom = `${(scale - 1) * 24}px`;
+    });
+    yes.addEventListener('click', () => { first.hidden = true; answer.hidden = false; });
+    document.getElementById('restart').addEventListener('click', () => {
+      clickCount = 0;
+      question.textContent = '奥斯卡，你愿意做我男朋友嘛';
+      think.textContent = '我还是要再想想...';
+      image.innerHTML = drawings.heart;
+      image.setAttribute('aria-label', '微笑的爱心插画');
+      yes.style.transform = 'scale(1)';
+      yes.style.marginBottom = '0';
+      answer.hidden = true;
+      first.hidden = false;
+    });
+  </script>
+</body>
+</html>
